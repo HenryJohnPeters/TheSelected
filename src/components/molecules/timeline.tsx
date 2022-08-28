@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import type { TimelineType } from "../../data";
+import logo1 from'../../../public/Images/TheSelected.png'
+import Image from 'next/image'
 
 interface TimelineCardProps {
   data: TimelineType[];
@@ -10,6 +12,8 @@ function TimelineCard({
 }: TimelineCardProps) {
   return (
     <>
+    <h3>ROADMAP</h3>
+    <br></br>
       {data.map(({
         id, title, date: datetime, description, location, url, logo,
       }: TimelineType) => (
@@ -17,32 +21,40 @@ function TimelineCard({
           <div
             id="indicator"
             className={
-              `absolute top-6 -left-1.5 w-3 h-3 rounded-full ${datetime.end.toLowerCase() === "present" ? "bg-primary ring-[6px] ring-primary ring-opacity-25" : "bg-black-500"}`
+              `absolute top-6 -left-1.5 w-3 h-3 rounded-full ${datetime.end.toLowerCase() === "present" ? "bg-cyan-300 ring-[6px] ring-primary ring-opacity-25" : "bg-black-500"}`
             }
           />
           <div>
-            <img
-              src={logo}
-              alt={title}
-              className="rounded-lg w-14 h-14 inline-block mb-4 object-cover bg-black-100 p-1"
-            />
+          <Image
+       
+       src={logo1}
+       alt="Picture of the author"
+       width={100}
+       height={100}
+     />
+            
+ 
+ 
+  
+ 
 
-            <h3 className="text-xl sm:text-2xl text-black-100 font-medium mb-4">
+            <h3 className="text-xl text-cyan-300 sm:text-2xl text-black-100 font-medium mb-4">
               {title}
             </h3>
-            <a href={url} className="hover:text-black-100 text-primary inline-block mb-2">
+            {/* <a href={url} className="hover:text-black-100 text-cyan-300 inline-block mb-2">
               {location}
-            </a>
+            </a> */}
             <p className="mb-4">
               {description}
             </p>
 
             <time className="text-sm text-black-100">
-              {`${datetime.start} - ${datetime.end}`}
+              {`${datetime.start}`}
             </time>
           </div>
         </li>
       ))}
+     <span className="p-2">To be continued...</span>  
     </>
   );
 }

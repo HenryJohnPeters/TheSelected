@@ -1,11 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
+import { IoLogoDiscord, IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 import type { IconType } from "react-icons";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 import { Button } from "../components/atoms";
 import { ProjectList } from "../components/organisms";
 import type { SEOProps } from "../components/seo";
 import SEO from "../components/seo";
+import { TimelineSection } from "../components/organisms";
+
 
 type SocialMediaType = {
   icon: IconType;
@@ -34,83 +36,150 @@ function Home() {
 
   const socialMediaLinks: SocialMediaType[] = [
     {
-      icon: IoLogoGithub,
-      url: "https://github.com/andrianfaa",
+      icon: IoLogoDiscord,
+      url: "https://github.com/TheSelected",
       title: "Github",
     },
     {
       icon: IoLogoTwitter,
-      url: "https://twitter.com/andrianfaa",
+      url: "https://twitter.com/TheSelected",
       title: "Twitter",
     },
-    {
-      icon: IoLogoLinkedin,
-      url: "https://linkedin.com/in/andrianfaa",
-      title: "LinkedIn",
-    },
+
   ];
 
   return (
     <div className="fade-in">
       <SEO data={SEOData} />
-
-      <header className="container p-6 min-h-screen sm:min-h-[unset] sm:h-[500px] flex flex-col sm:flex-row items-center justify-center">
-        <div className="w-full mb-6">
-          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl text-black-100 max-w-3xl font-normal text-center sm:text-left leading-normal md:leading-[56px]">
-            <span className="block text-lg md:text-xl font-sans mb-4 font-medium">
-              Hi, I'm Andrian Fadhilla{" "}
-            </span>
-            I'm a {" "}
-            <span className="text-primary">
-              User Interface Designer
-            </span>
-            {" "}
-            and also a{" "}
-            <span className="text-cyan-300">
-              Front-End Developer
-            </span>
-            {" "}
-            based in Bekasi, Indonesia.
-            I Love to create beautiful and functional user interfaces using React.js.
-          </h1>
-
-          <Button.Base
-            className="button-base rounded mt-4 block mx-auto sm:mx-[unset]"
-            title="Hire me"
-          >
-            Hire me
-          </Button.Base>
-        </div>
-
-        <ul className="w-full sm:w-[50px] flex items-center justify-center sm:flex-col gap-4">
-          {socialMediaLinks.map(({ title, url, icon }) => {
-            const Icon = icon;
-
-            return (
-              <li key={title}>
-                <a
-                  href={url}
-                  className="button-base w-12 h-12 rounded-full flex items-center justify-center"
-                  title={title}
-                >
-                  <Icon className="h-6 w-6" />
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </header>
-
-      <div className="my-4 justify-center hidden sm:flex">
-        <MdOutlineDoubleArrow className="h-6 w-6 rotate-90 text-black-100" />
+      <div className=" ">
       </div>
+      <div className="text-center bg-base text-white py-20 px-6">
+        <h1 className="text-4xl font-display">The first <span className="text-cyan-300">Fully Decentralised Project </span> Using Blockchain Technology.<br />
+          Connecting communities to create self governed projects.
+        </h1>
 
-      <div className="container p-6">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-display text-black-100 mb-6 border-b border-b-black-700 pb-6">
-          Projects.
-        </h2>
+ 
 
-        <ProjectList offset={3} />
+      </div>
+      <div className="text-center bg-base text-base py-2 px-2">
+ 
+
+           
+      <li >Each nft holder is given a percentage all profits from the projects they are involved in.</li>
+      <li  >
+        25% of profits will be given to a "treasury wallet" to help fund the project for each drop.
+      </li>
+      <li  >
+        All descions will be chosen via polls within the collection community
+      </li>
+
+      </div>
+      {/*    
+      <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
+  <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="0"
+      className="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div className="carousel-inner relative w-full overflow-hidden">
+    <div className="carousel-item active relative float-left w-full">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+        className="block w-full"
+        alt="..."
+      />
+      <div className="carousel-caption hidden md:block absolute text-center">
+        <h5 className="text-xl">First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div className="carousel-item relative float-left w-full">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+        className="block w-full"
+        alt="..."
+      />
+      <div className="carousel-caption hidden md:block absolute text-center">
+        <h5 className="text-xl">Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div className="carousel-item relative float-left w-full">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+        className="block w-full"
+        alt="..."
+      />
+      <div className="carousel-caption hidden md:block absolute text-center">
+        <h5 className="text-xl">Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button
+    className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="prev"
+  >
+    <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button
+    className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="next"
+  >
+    <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div> */}
+
+
+ 
+       
+      <br />
+      {/* <li  >
+        Each project will be assigned an "Overseerer". They will have no involvment in the project itself but will be in charge of authorisating payments from the treasury.<br/> Whilst also aiding to maintain the community and any issues that arise within it. 
+        </li> */}
+
+      {/* <ul className="list-disc">
+       <li className="list-disc">
+        Each Project is assigned an "Overseerer". They have no involvment in the project and will act as a third party intermidatary. This is to ensure fairness of all participants
+        </li>
+       <li className="list-disc">
+        Each nft holder is given a percentage all profits from the projects they are involved in
+        </li>
+        <li className="list-disc">
+        25% of profits will be given to a "treasury wallet" to help fund the project for each drop.
+        </li>
+        <li className="list-disc">
+        All descions will be chosen via polls from involvment of the whole community
+        </li>
+       </ul>   */}
+
+
+
+      <div className="ml-2 w-8/12 p-6 justify-center">
+        <TimelineSection />
       </div>
     </div>
   );

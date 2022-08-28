@@ -32,13 +32,13 @@ function Footer() {
   return (
     <footer className="border-t border-t-black-700 py-6 mt-4">
       <div className="container p-6 text-center flex flex-col sm:flex-row sm:justify-between gap-6">
-        <Link href="/" passHref>
+        {/* <Link href="/" passHref>
           <a className="font-semibold text-black-100 text-lg" title={router.pathname !== "/" ? "Back to Home" : "Home"}>
             @andrianfaa
           </a>
-        </Link>
+        </Link> */}
 
-        <ul className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-4 sm:gap-6 py-2 sm:py-0">
+        {/* <ul className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-4 sm:gap-6 py-2 sm:py-0">
           {footerMenu.map(({ label, href }) => (
             <li key={label} className={href === "/" ? "sm:hidden" : ""}>
               <Link href={href} passHref>
@@ -51,15 +51,15 @@ function Footer() {
               </Link>
             </li>
           ))}
-        </ul>
-
+        </ul> */}
+{/* 
         <a
           href="mailto:andrianfadhilla@gmail.com"
           title="Email me"
           className="font-medium hover:text-black-100 focus:text-black-100"
         >
           andrianfadhilla@gmail.com
-        </a>
+        </a> */}
       </div>
     </footer>
   );

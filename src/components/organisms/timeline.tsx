@@ -4,7 +4,7 @@ import { TimelineCard } from "../molecules";
 
 function Timeline() {
   return (
-    <ul className="flex flex-col">
+    <ul  >
       <TimelineCard data={TimelineData} />
     </ul>
   );
