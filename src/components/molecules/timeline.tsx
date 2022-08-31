@@ -32,12 +32,6 @@ function TimelineCard({
        width={100}
        height={100}
      />
-            
- 
- 
-  
- 
-
             <h3 className="text-xl text-cyan-300 sm:text-2xl text-black-100 font-medium mb-4">
               {title}
             </h3>
