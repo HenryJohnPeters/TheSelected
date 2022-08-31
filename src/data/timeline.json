@@ -1,8 +1,10 @@
 [
   {
     "id": "470bcf6b-64c0-4f7c-b26a-42549dafe208",
-    "title": "The Selected V: Pioneers",
-    "description": "The First nft optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella",
+    "title": "The Selected V: web3 Pioneers",
+    "description": "This drop aims for particpants to create/find ways to generate NFT holders passive income. This project will be funded with 20% of the nft drop profits and assigned to the `Overseerer` of the project to authorise payments. The overseerer will select 25% of the community to be given free access to the next project",
+    "chain":"Cardano ₳",
+    "chainDescription":"",
     "date": {
       "start": "February, 2022",
        "end": "Present"
@@ -14,25 +16,16 @@
   {
     "id": "7eec3f29-31e0-4236-ab24-d671a782a0d7",
     "title": "The Selected V: The Chosen Few",
-    "description": "The First nft optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella",
+    "description": "To be continued...",
+    "chain":"",
+    "chainDescription":"",
     "date": {
-      "start": "January, 2020",
+      "start": "",
       "end": "March, 2020"
     },
-    "location": "Direktorat Jenderal Bea dan Cukai",
-    "url": "https://beacukai.go.id/",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lambang_Bea_dan_Cukai.svg/220px-Lambang_Bea_dan_Cukai.svg.png"
-  },
-  {
-    "id": "458c0951-9d99-4ce1-bbcb-626fd4f2e268",
-    "title": "The Selected V: Warriors",
-    "description": "Entering High School as a computer network engineering student, it was a exciting time when I was in High School, learning about the world of computer network and some of the technologies that I was using in my life.",
-    "date": {
-      "start": "June, 2018",
-      "end": "May, 2021"
-    },
-    "location": "SMK Boedi Luhur",
-    "url": "https://yapenhasboediluhur.sch.id",
-    "logo": "https://boediluhur.files.wordpress.com/2017/07/cropped-cropped-logo-boedi-luhur.png?w=240"
+    "location": "",
+    "url": "https://beacukai.go.id/"
+   
   }
+ 
 ]

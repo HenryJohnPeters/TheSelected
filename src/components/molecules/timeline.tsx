@@ -15,7 +15,7 @@ function TimelineCard({
     <h3>ROADMAP</h3>
     <br></br>
       {data.map(({
-        id, title, date: datetime, description, location, url, logo,
+        id, title, date: datetime, description, location, url, logo,chain, chainDescription
       }: TimelineType) => (
         <li key={id} className="w-full ml-3 pl-6 md:pl-8 pb-6 sm:pb-8 last:pb-0 border-l border-black-700 relative">
           <div
@@ -41,9 +41,12 @@ function TimelineCard({
             <h3 className="text-xl text-cyan-300 sm:text-2xl text-black-100 font-medium mb-4">
               {title}
             </h3>
-            {/* <a href={url} className="hover:text-black-100 text-cyan-300 inline-block mb-2">
-              {location}
-            </a> */}
+            <a href={url} className="hover:text-black-100 text-white inline-block mb-2">
+              Blockchain: {chain}
+            </a>
+            <p  >
+              {chainDescription}
+            </p>
             <p className="mb-4">
               {description}
             </p>
