@@ -15,6 +15,8 @@ export type TimelineType = {
   location: string;
   url: string;
   logo: string;
+  chain:string;
+  chainDescription:string;
 };
 
 export {
