@@ -1,22 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
-import type { TimelineType } from "../../data";
 import logo1 from'../../../public/Images/TheSelected.png'
 import Image from 'next/image'
 
-interface TimelineCardProps {
-  data: TimelineType[];
-}
+ 
 
 function TimelineCard({
-  data,
-}: TimelineCardProps) {
+  data
+} ) {
   return (
     <>
     <h3>ROADMAP</h3>
     <br></br>
       {data.map(({
         id, title, date: datetime, description, location, url, logo,chain, chainDescription
-      }: TimelineType) => (
+      }) => (
         <li key={id} className="w-full ml-3 pl-6 md:pl-8 pb-6 sm:pb-8 last:pb-0 border-l border-black-700 relative">
           <div
             id="indicator"
