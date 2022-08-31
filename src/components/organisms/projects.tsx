@@ -14,7 +14,6 @@ function Projects({ offset, selectedTag }: ProjectsProps) {
     if (selectedTag) {
       return dataProjects.filter(({ tags }) => tags?.includes(selectedTag)).slice(0, offset || dataProjects.length);
     }
-
     return dataProjects.slice(0, offset || dataProjects.length);
   };
 
@@ -32,7 +31,6 @@ function Projects({ offset, selectedTag }: ProjectsProps) {
         <li key={id} className="flex flex-col-reverse sm:flex-row justify-between gap-4">
           <div className="w-full flex-1 max-w-[450px] sm:flex sm:flex-col sm:justify-between sm:items-start">
             <time className="text-sm text-black-200 font-medium inline-block mb-2">{new Date(createdAt).toUTCString().substring(0, 16)}</time>
-
             <div>
               <a
                 href={url}
@@ -52,7 +50,6 @@ function Projects({ offset, selectedTag }: ProjectsProps) {
                 title={`Open ${name} in new tab`}
               >
                 <AiOutlineLink className="inline-block mr-2" />
-                {" "}
                 {url.length > 40 ? `${url.slice(0, 40)}...` : url}
               </a>
             </div>
