@@ -43,7 +43,7 @@ function Home() {
             Meet the community
           </h3>
           <p className="text-md  text-white dark:text-gray-300 py-4">
-            Holding an nft will allow access to its community. Each drop will have indivdual channels only availble to nft holders.<br /><br />Each project is assigned an "Overseer" who will be in charge of the "Treasury Wallet" aiding where possible.
+            Holding an nft will allow access to its community. Each drop will have indivdual discord servers.
           </p>
         </div>
         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mt-6 bg-black-900 px-4 py-4 bg-black-900 shadow-lg rounded-lg dark:bg-gray-800">
@@ -58,8 +58,6 @@ function Home() {
           <p className="text-md  text-white dark:text-gray-300 py-4">
             Each memeber is assigned to a team of their choice dependant on their skill set.
             The goal of which is to create a product using the drops theme as a blueprint.<br /><br />
-
-            All significant descions will be decided via polls within the communities channel.
           </p>
         </div>
         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mt-6 bg-black-900 px-4 py-4 bg-black-900 shadow-lg rounded-lg dark:bg-gray-800">
@@ -72,7 +70,7 @@ function Home() {
             Create something great
           </h3>
           <p className="text-md  text-white dark:text-gray-300 py-4">
-            With help from each communties "Treasury Wallet" create something great. Each nft holder will liable to percentage of profits generated from the product. These percentages are decided by the community.<br /><br />All products created are 100% owned by the drops community.
+            With help from each communties "Treasury Wallet" create something great. Each nft holder will liable to percentage of profits generated from the product. These percentages are decided by the community.
           </p>
         </div>
       </div>
