@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.theselected.io
+
+# Sitemaps
+Sitemap: https://www.theselected.io/sitemap.xml

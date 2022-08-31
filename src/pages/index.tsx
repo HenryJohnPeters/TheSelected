@@ -1,16 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
-import { IoLogoDiscord, IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
-import type { IconType } from "react-icons";
+
+import { GiTeamIdea } from "react-icons/gi"
 import type { SEOProps } from "../components/seo";
 import SEO from "../components/seo";
 import { TimelineSection } from "../components/organisms";
-import { GiTeamIdea } from "react-icons/gi"
-
-type SocialMediaType = {
-  icon: IconType;
-  url: string;
-  title: string;
-}
+ 
 function Home() {
   const SEOData: SEOProps = {
     title: "The Selected",
@@ -30,20 +23,6 @@ function Home() {
     ],
   };
 
-  const socialMediaLinks: SocialMediaType[] = [
-    {
-      icon: IoLogoDiscord,
-      url: "https://github.com/TheSelected",
-      title: "Github",
-    },
-    {
-      icon: IoLogoTwitter,
-      url: "https://twitter.com/TheSelected",
-      title: "Twitter",
-    },
-
-  ];
-
   return (
     <div className="fade-in">
       <SEO data={SEOData} />
@@ -52,7 +31,7 @@ function Home() {
           Connecting communities to create self governed projects.
         </h1>
         <div className="h-3 text-sm justify-center py-10 px-6 text-center text-gray-400">
-          "One of the vices of the virtue of decentralization is that people don't share ideas."{" "}<br /><span >Anthony J. F. O'Reilly</span>
+          "One of the vices of the virtue of decentralization is that people don't share ideas."<br /><span >Anthony J. F. O'Reilly</span>
         </div>
       </div>
       <div className="sm:flex flex-wrap justify-center items-center text-center gap-8">
@@ -98,8 +77,7 @@ function Home() {
         </div>
       </div>
       <div className="h-3 text-sm justify-center py-10 px-6 text-center text-gray-400">
-        "
-        Its true that contemporary technology permits decentralization, it also permits centralization. It depends on how you use the technology."{" "}<br /><span  >Noam Chomsky</span>
+        "Its true that contemporary technology permits decentralization, it also permits centralization. It depends on how you use the technology."<br /><span  >Noam Chomsky</span>
       </div>
       <div className="ml-2 w-8/12 p-6 justify-center ml-6">
         <TimelineSection />
